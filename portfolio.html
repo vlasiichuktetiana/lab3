@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.portfolio.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap" rel="stylesheet">
+    <title>Портфоліо</title>
+</head>
+<body>
+    <header>
+        <h1>CreaDes - дизайн інтер'єру</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="aboutus.html">Про нас</a></li>
+                <li><a href="registration.html">Реєстрація</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="projects">
+        <div class="project">
+            <img src="media/project1.jpg" alt="Проект 1">
+            <div class="project-text">
+                <h3>Проект 1</h3>
+                <p>Опис проекту 1. Тут може бути більше деталей про цей проект.</p>
+            </div>
+        </div>
+        
+        <div class="project">
+            <img src="media/project2.jpg" alt="Проект 2">
+            <div class="project-text">
+                <h3>Проект 2</h3>
+                <p>Опис проекту 2. Тут може бути більше деталей про цей проект.</p>
+            </div>
+        </div>
+        
+        <div class="project">
+            <img src="media/project3.jpg" alt="Проект 3">
+            <div class="project-text">
+                <h3>Проект 3</h3>
+                <p>Опис проекту 3. Тут може бути більше деталей про цей проект.</p>
+            </div>
+        </div>
+    </section>
+
+    <button id="scrollButton" onclick="scrollToTop()">&#8657;</button>
+
+    <script>
+        var scrollButton = document.getElementById("scrollButton");
+
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        }
+    </script>
+    
+    <footer>
+        <h2>Контакти</h2>
+        <p>Зв'яжіться з нами за адресою: example@email.com</p>
+        <p>Телефон: +1234567890</p>
+        <p>Адреса: вул. Вулична, 123</p>
+        <p>&copy; 2023 Дизайн інтер'єру</p>
+    </footer>
+</body>
+</html>

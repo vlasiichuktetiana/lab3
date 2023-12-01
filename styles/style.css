@@ -1,0 +1,258 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size:calc(12px + 1.5vw);
+}
+
+nav > ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:calc(8px + 1vw);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+}
+
+section ::selection {
+    background-color: grey;
+}
+
+
+h2 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#images {
+    display: flex;
+    flex-direction: space-between;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+.dropdown .dropbtn {
+    font-size: 22px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0;
+ }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    max-width: 300px; 
+    padding-top: 20px;
+    margin: 0 auto;
+}
+  
+.search-container input[type="text"] {
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+  
+.search-container button[type="submit"] {
+    padding: 10px 3px;
+    width: 200px;
+    background-color: rgb(27, 33, 33);
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.search-container button[type="submit"]:hover {
+    background-color: rgb(83, 147, 151);
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+#scrollButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    color: rgb(33, 31, 31);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: xx-large;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+	color: #fff;
+}
+
+footer > h2 {
+    color: #fff;
+}
+
+:root {
+    --main-bg-color: #f4f4f4;
+    --main-text-color: #333;
+    --header-bg-color: #333;
+    --header-text-color: #fff;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: var(--header-text-color);
+}
+
+.img-out {
+    display: flex;
+    flex-basis: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.hidden-text {
+    display: block; 
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+    font-size: calc(2px + 1vw);
+    text-shadow: black 2px 2px 2px;
+}
+
+.img-btn {
+    display: block; 
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.img-out:hover > .hidden-text {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.img-out:hover > .img-btn {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.img-out:hover > img{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+    filter: brightness(50%);
+}
+
+.img-btn > a {
+    color: white;
+    font-size: calc(3px + 1vw);
+    text-shadow: black 1px 1px 2px;
+}

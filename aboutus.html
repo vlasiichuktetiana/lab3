@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.aboutus.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400&display=swap" rel="stylesheet">
+    <title>Про нас</title>
+</head>
+<body>
+    <header>
+        <h1>CreaDes - дизайн інтер'єру</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="portfolio.html">Портфоліо</a></li>
+                <li><a href="registration.html">Реєстрація</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Про нас</h2>
+        <div class="text">
+            <p>Ми - команда професіоналів, яка створює унікальні інтер'єри для наших клієнтів.</p>
+            <p>Наша мета - перетворити ваш простір у місце, де ви будете почувати себе комфортно і затишно.</p>
+            <p>Ми маємо багаторічний досвід у галузі дизайну інтер'єру і гордо можемо представити вам наші роботи.</p>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Наша команда</h2>
+        <div id="team">
+            <div class="team-member">
+                <img src="media/women.png" alt="Учасник команди 1">
+                <h3>Марків Віталіна</h3>
+                <p>Посада: Дизайнер інтер'єру</p>
+            </div>
+        
+            <div class="team-member">
+                <img src="media/men.png" alt="Учасник команди 2">
+                <h3>Шаршин Євгеній</h3>
+                <p>Посада: Архітектор</p>
+            </div>
+        
+            <div class="team-member">
+                <img src="media/men2.png" alt="Учасник команди 3">
+                <h3>Таскан Віктор</h3>
+                <p>Посада: Дизайнер-консультант</p>
+            </div>
+        </div>
+    </section>
+
+    <button id="scrollButton" onclick="scrollToTop()">&#8657;</button>
+
+    <script>
+        var scrollButton = document.getElementById("scrollButton");
+
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        }
+    </script>
+    
+    <footer>
+        <h2>Контакти</h2>
+        <p>Зв'яжіться з нами за адресою: example@email.com</p>
+        <p>Телефон: +1234567890</p>
+        <p>Адреса: вул. Вулична, 123</p>
+        <p>&copy; 2023 Дизайн інтер'єру</p>
+    </footer>
+</body>
+</html>
